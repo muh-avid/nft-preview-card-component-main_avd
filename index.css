@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
+
+
+body {
+    background-color: #0D1A2D;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    flex-direction: column;
+}
+
+.attribttion {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.card {
+    width: 300px;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+    background-color: #14273E;
+}
+
+.card__image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card__container-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card__container-img:hover .card__image {
+    opacity: 0.3;
+}
+
+.card__view {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card__container-img:hover .card__view {
+    opacity: 1;
+}
+
+
+.card > a {
+    font-family: "Outfit", sans-serif;
+    font-weight: 550;
+    font-size: 22px;
+    color: white;
+    text-decoration: none; 
+}
+
+.card > a:hover {
+    color: #00FFF8;
+}
+
+
+.card >p {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+.card__icon-list {
+    display: flex;
+    justify-content: space-between; /* Membuat ruang di antara dua elemen <ul> */
+    align-items: center; /* Menengahkan elemen vertikal */
+    width: 304px; /* Sesuaikan lebar sesuai kebutuhan */
+    
+  }
+
+  .card__icon-list ul {
+    display: flex;
+    align-items: center; /* Menengahkan elemen vertikal di dalam <ul> */
+    list-style: none; /* menghapus list style yg berbentuk titik */
+    padding: 0;
+
+  }
+
+  .card__img-eth{
+    width: 13px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 18px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin-right: 8px; /* Menambahkan ruang di antara gambar dan teks */
+  }
+
+  .card__font-eth{
+    color: #00FFF8;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .card__img-clock {
+    width: 24px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 24px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin-right: 8px; /* Menambahkan ruang di antara gambar dan teks */
+  }
+
+  .card__font-clock{
+    color: hsl(215, 51%, 70%)
+  }
+
+  .card__name-creator > span {
+    cursor: pointer;
+  }
+
+  .card__name-creator > span:hover{
+    color: #00FFF8;
+  }
+
+
+  .card__creator {
+    display: flex; /* Menggunakan flex container */
+    align-items: center; /* Menengahkan elemen secara vertikal */
+  }
+  
+  .card__creator-img {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px; /* Menambahkan ruang di antara gambar dan teks */
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card__name-creator {
+    font-family: "Outfit", sans-serif;
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    margin: 0; /* Menghapus margin atas dan bawah agar lebih rapi */
+  }
+  
+  .card__name-creator span {
+    font-weight: bold;
+    color: white;
+  }
+  
+  
